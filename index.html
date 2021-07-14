@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="/src/css/reset.css" />
     <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/slick.css" />
+    <link rel="stylesheet" href="/src/css/jquery.fancybox.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -21,7 +23,7 @@
       <a href="#" class="logo">
         <img class="logo__img" src="/src/images/header-logo.svg" alt="logo" />
       </a>
-      <h6 class="header__subtitle">Зеленный тариф для дома и бизнеса</h6>
+      <h6 class="header__subtitle">Зеленый тариф для дома и бизнеса</h6>
       <h1 class="header__title">
         Солнечная электростанция <span>с доходом от 1000$ в месяц</span>
       </h1>
@@ -92,10 +94,10 @@
         <div class="services__inner">
           <div class="services__content">
             <div class="services__item">
-              <h4 class="item-title">
+              <h4 class="services__item-title">
                 Полный комплект солнечной электростанции
               </h4>
-              <p class="item-text">
+              <p class="services__item-text">
                 74 модели солнечных панелей, 31 модель инверторов, провода с
                 повышенной устойчивостью к атмосферным условиям, качественные
                 соединители, контроллеры зарядов и надежные гелевые аккумуляторы
@@ -103,10 +105,10 @@
               </p>
             </div>
             <div class="services__item">
-              <h4 class="item-title">
+              <h4 class="services__item-title">
                 Подбор оборудования с максимальной производительностью
               </h4>
-              <p class="item-text">
+              <p class="services__item-text">
                 Подбираем солнечные панели с учетом расположения Вашего дома,
                 количеством прямого и рассеянного излучения, для того, чтобы
                 Ваша электростанция - вырабатывала максимальное количество
@@ -114,10 +116,10 @@
               </p>
             </div>
             <div class="services__item">
-              <h4 class="item-title">
+              <h4 class="services__item-title">
                 Монтаж оборудования в соответствии с ГОСТом
               </h4>
-              <p class="item-text">
+              <p class="services__item-text">
                 Монтаж производится в точном соответствии с ГОСТом, с учетом
                 закона о «Зеленом тарифе» и требованиями Облэнерго. При этом, мы
                 учитываем, чтобы солнечная станция имела максимально возможную
@@ -141,5 +143,127 @@
       </div>
     </section>
     <!-- /Services -->
+
+    <!-- Tariff -->
+    <section class="tariff">
+      <div class="container">
+        <h2 class="tariff__title">Зеленый тариф</h2>
+        <div class="tarrif__inner">
+          <div class="tariff__box">
+            <div class="tariff__tabs">
+              <div class="tariff__tabs-links">
+                <a
+                  href="#tab-1"
+                  class="tariff__tabs-link tariff__tabs-link--active"
+                  >продажа</a
+                >
+                <a href="#tab-2" class="tariff__tabs-link">закрепление</a>
+                <a href="#tab-3" class="tariff__tabs-link">ограничения</a>
+              </div>
+              <div class="tariff__tabs-contentbox">
+                <div
+                  class="tariff__tabs-content tariff__tabs-content--active"
+                  id="tab-1"
+                >
+                  <div class="tariff__slider">
+                    <div class="tariff__slider-item">
+                      <img
+                        src="/src/images/tariff/slider-img.jpg"
+                        alt="slider-img"
+                        class="tariff__slider-img"
+                      />
+                      <p class="tariff__slider-text">
+                        Цена, по которой домохозяйства могут продать
+                        электроэнергию, более чем в 10 раз превышает цену, по
+                        которой они ее покупают для своих нужд — 0,16 Евро/кВт
+                        (продажа).
+                      </p>
+                    </div>
+                    <div class="tariff__slider-item">
+                      <img
+                        src="/src/images/tariff/slider-img.jpg"
+                        alt="slider-img"
+                        class="tariff__slider-img"
+                      />
+                      <p class="tariff__slider-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eos accusantium impedit, necessitatibus ea esse
+                        repudiandae, explicabo nulla laudantium blanditiis
+                        aspernatur fuga. Animi delectus quos consequuntur
+                        temporibus saepe praesentium iure error.
+                      </p>
+                    </div>
+                    <div class="tariff__slider-item">
+                      <img
+                        src="/src/images/tariff/slider-img.jpg"
+                        alt="slider-img"
+                        class="tariff__slider-img"
+                      />
+                      <p class="tariff__slider-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur, voluptate dignissimos eos expedita qui
+                        autem fuga tenetur ducimus officia modi tempore
+                        exercitationem voluptas sequi facere quaerat
+                        consequatur, eaque officiis eius.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tariff__tabs-content" id="tab-2"></div>
+                <div class="tariff__tabs-content" id="tab-3"></div>
+              </div>
+            </div>
+            <div class="tariff__info">
+              <div class="tariff__info-item">
+                <h4 class="tariff__info-title">Гарантия выкупа</h4>
+                <p class="tariff__info-text">
+                  Гарантированный выкуп электроэнергии государством - прописано
+                  в НКРЕ №447
+                </p>
+              </div>
+              <div class="tariff__info-item">
+                <h4 class="tariff__info-title">Долгосрочно</h4>
+                <p class="tariff__info-text">
+                  это проект, поддерживаемый международными инвестиционными
+                  организациями
+                </p>
+              </div>
+              <div class="tariff__info-item">
+                <h4 class="tariff__info-title">Вид вложения</h4>
+                <p class="tariff__info-text">
+                  Альтернатива банковским депозитам, окупаемость - от 16% до 18%
+                  годовых
+                </p>
+              </div>
+              <div class="tariff__info-item">
+                <h4 class="tariff__info-title">Высокая ставка</h4>
+                <p class="tariff__info-text">
+                  Самая высокая тарифная ставка в европе - 0,16 евро
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tariff__content">
+            <p class="tariff__content-text">
+              «Зеленый тариф» — это особые тарифные условия, которые позволяют
+              частным домохозяйствам не только потреблять, но и продавать
+              выработанное домашними солнечными электростанциями электричество в
+              электросеть общего пользования.
+            </p>
+            <img
+              class="tariff__content-img"
+              src="/src/images/tariff/green-tariff.jpg"
+              alt="green-tariff"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Tariff -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/src/js/slick.min.js"></script>
+    <script src="/src/js/jquery.fancybox.min.js"></script>
+    <script src="/src/js/main.js"></script>
   </body>
 </html>
