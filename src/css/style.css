@@ -351,3 +351,64 @@ ul {
 .slick-arrow:hover path {
   fill: #a9a32a;
 }
+
+/* =====================
+        Steps
+======================*/
+
+.steps {
+  margin-bottom: 150px;
+}
+
+.steps__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps__content-inner {
+  flex-basis: 510px;
+}
+
+.steps__content-title {
+  font-size: 24px;
+  line-height: 32.5px;
+  font-weight: 700;
+  color: #868585;
+  margin-bottom: 60px;
+}
+
+.steps__content-list {
+  list-style: none;
+  counter-reset: number;
+}
+
+.content-list__item {
+  counter-increment: number;
+  margin-bottom: 30px;
+}
+
+.content-list__item::before {
+  content: "0" counter(number);
+  margin-bottom: 11px;
+  color: #868585;
+}
+
+.content-list__item:nth-last-child(n + 10)::before {
+  content: counter(number);
+}
+
+.content-list__title {
+  font-size: 18px;
+  line-height: 24.5px;
+  font-weight: 700;
+}
+
+.content-list__text {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.steps__img {
+  flex-basis: 600px;
+  object-fit: cover;
+}
