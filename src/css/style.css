@@ -106,7 +106,7 @@ ul {
 }
 
 .container {
-  width: 1220px;
+  max-width: 1220px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -237,7 +237,7 @@ ul {
 
 .tariff__slider-text {
   float: right;
-  width: 235px;
+  max-width: 235px;
   font-size: 14px;
   line-height: 19px;
   text-align: justify;
@@ -274,4 +274,80 @@ ul {
 .tariff__info-item {
   flex-basis: 235px;
   margin-bottom: 20px;
+}
+
+/* =====================
+      Blockquote
+======================*/
+
+.blockquote {
+  background-image: url(/src/images/blockquote-img.jpg);
+  min-width: 1920px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 128px 10px 144px;
+  margin-bottom: 150px;
+}
+
+.blockquote__text {
+  max-width: 670px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 57px;
+  color: #fff;
+}
+
+/* =====================
+        CLients
+======================*/
+
+.clients {
+  margin-bottom: 150px;
+}
+
+.clients__title {
+  font-size: 24px;
+  line-height: 32.5px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.clients__slider-box {
+  display: flex;
+}
+
+.clients__slider-box__img {
+  flex-basis: 510px;
+  margin-right: 90px;
+  margin-bottom: 30px;
+}
+
+.clients__slider-box__title {
+  max-width: 480px;
+  font-size: 18px;
+  line-height: 24.5px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.clients__slider-box__list {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.clients__slider-box__list li {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.slick-arrow path {
+  transition: fill 0.2s;
+}
+
+.slick-arrow:hover path {
+  fill: #a9a32a;
 }
