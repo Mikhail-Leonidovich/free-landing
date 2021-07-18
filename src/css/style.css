@@ -32,7 +32,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  min-width: 1920px;
+  width: 100%;
   color: #fff;
   text-align: center;
   display: flex;
@@ -218,6 +218,12 @@ ul {
   text-align: justify;
 }
 
+.tariff__content-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .tariff__tabs-content {
   display: none;
 }
@@ -282,7 +288,7 @@ ul {
 
 .blockquote {
   background-image: url(/src/images/blockquote-img.jpg);
-  min-width: 1920px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -408,7 +414,103 @@ ul {
   line-height: 19px;
 }
 
-.steps__img {
+.steps__box-img {
   flex-basis: 600px;
   object-fit: cover;
+}
+
+.steps__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* =====================
+        Footer
+======================*/
+
+.footer {
+  background-image: url("/src/images/footer/footer-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  padding: 70px 0 50px;
+}
+
+.footer__top {
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 510px;
+  margin-right: 90px;
+}
+
+.footer__form-title {
+  margin-bottom: 60px;
+  font-size: 24px;
+  line-height: 32.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer__form-input {
+  display: block;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: none;
+  padding-bottom: 10px;
+  margin-bottom: 60px;
+  outline: none;
+}
+
+.footer__form-input::placeholder {
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.footer__form-input:focus::placeholder {
+  color: transparent;
+}
+
+.footer__form-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: max-content;
+  padding: 0;
+}
+
+.footer__contacts {
+}
+
+.footer__contacts-title {
+  margin-bottom: 60px;
+  font-size: 24px;
+  line-height: 32.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer__contacts-list {
+  font-size: 18px;
+  line-height: 24.5px;
+}
+
+.footer__contacts-item {
+  margin-bottom: 30px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
