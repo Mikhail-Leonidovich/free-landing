@@ -27,7 +27,7 @@ ul {
 ======================*/
 
 .header {
-  background-image: url(../images/header-bg.jpg);
+  background-image: url(/src/images/header-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -291,7 +291,7 @@ ul {
 ======================*/
 
 .blockquote {
-  background-image: url(../images/blockquote-img.jpg);
+  background-image: url(/src/images/blockquote-img.jpg);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -435,7 +435,7 @@ ul {
 ======================*/
 
 .footer {
-  background-image: url(../images/footer/footer-img.jpg);
+  background-image: url(/src/images/footer/footer-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -685,10 +685,6 @@ ul {
 
   .footer__bottom .social {
     margin-bottom: 20px;
-  }
-
-  .footer__contacts-list{
-    font-size: 14px;
   }
 }
 
