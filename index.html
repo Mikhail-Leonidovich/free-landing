@@ -140,7 +140,11 @@
             </div>
           </div>
           <div class="services__box-img">
-            <img class="services__img" src="./src/images/services/img1.jpg" />
+            <img
+              class="services__img"
+              src="./src/images/services/img1.jpg"
+              alt="services__img"
+            />
           </div>
         </div>
       </div>
@@ -455,15 +459,32 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
-          <form class="footer__form" action="">
+          <form class="footer__form">
             <h2 class="footer__form-title">оставить заявку</h2>
-            <input class="footer__form-input" type="text" placeholder="Имя" />
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="free-landing" />
+            <input
+              type="hidden"
+              name="admin_email"
+              value="mikhail.yurkevich.blr@gmail.com"
+            />
+            <input type="hidden" name="form_subject" value="Form" />
+            <!-- END Hidden Required Fields -->
+
             <input
               class="footer__form-input"
+              name="Имя"
+              type="text"
+              placeholder="Имя"
+            />
+            <input
+              class="footer__form-input"
+              name="Телефон"
               type="tel"
               placeholder="Телефон"
             />
-            <button class="footer__form-button button" type="button">
+            <button class="footer__form-button button">
               <svg
                 width="101"
                 height="100"
