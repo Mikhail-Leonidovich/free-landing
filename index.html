@@ -27,7 +27,7 @@
       <h1 class="header__title">
         Солнечная электростанция <span>с доходом от 1000$ в месяц</span>
       </h1>
-      <a href="#" class="header__button button">
+      <a href="#sign__up" class="header__button button">
         <svg
           width="101"
           height="100"
@@ -307,7 +307,7 @@
                     Срок службы: 25-30 лет
                   </li>
                 </ul>
-                <a href="#" class="button">
+                <a href="#sign__up" class="button">
                   <svg
                     width="101"
                     height="100"
@@ -459,16 +459,12 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
-          <form class="footer__form">
+          <form class="footer__form" id="sign__up">
             <h2 class="footer__form-title">оставить заявку</h2>
 
             <!-- Hidden Required Fields -->
             <input type="hidden" name="project_name" value="free-landing" />
-            <input
-              type="hidden"
-              name="admin_email"
-              value="mikhail.yurkevich.blr@gmail.com"
-            />
+            <input type="hidden" name="admin_email" value="email@gmail.com" />
             <input type="hidden" name="form_subject" value="Form" />
             <!-- END Hidden Required Fields -->
 
@@ -536,7 +532,9 @@
           </div>
         </div>
         <div class="footer__bottom">
-          <a href="" class="footer__bottom-info">Политика конфиденциальности</a>
+          <a href="#" class="footer__bottom-info"
+            >Политика конфиденциальности</a
+          >
           <a href="#" class="logo">
             <img
               class="logo__img"
